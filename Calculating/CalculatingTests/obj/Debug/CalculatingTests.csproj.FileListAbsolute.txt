@@ -1,0 +1,6 @@
+C:\Users\Jennifer\Desktop\NSS_Projects\BackEnd\ConsoleCalculator\Calculating\CalculatingTests\bin\Debug\CalculatingTests.dll
+C:\Users\Jennifer\Desktop\NSS_Projects\BackEnd\ConsoleCalculator\Calculating\CalculatingTests\bin\Debug\CalculatingTests.pdb
+C:\Users\Jennifer\Desktop\NSS_Projects\BackEnd\ConsoleCalculator\Calculating\CalculatingTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Jennifer\Desktop\NSS_Projects\BackEnd\ConsoleCalculator\Calculating\CalculatingTests\obj\Debug\CalculatingTests.csprojResolveAssemblyReference.cache
+C:\Users\Jennifer\Desktop\NSS_Projects\BackEnd\ConsoleCalculator\Calculating\CalculatingTests\obj\Debug\CalculatingTests.dll
+C:\Users\Jennifer\Desktop\NSS_Projects\BackEnd\ConsoleCalculator\Calculating\CalculatingTests\obj\Debug\CalculatingTests.pdb
