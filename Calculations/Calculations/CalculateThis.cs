@@ -34,7 +34,8 @@ namespace Calculations
 
 
             var foundIt = desiredCalc.IndexOfAny(theDelimiters);
-            Console.WriteLine("Here's our delimiter: " + desiredCalc[foundIt]);
+            var ourComputation = desiredCalc[foundIt];
+            Console.WriteLine("Here's our delimiter: " + ourComputation);
 
             Console.ReadLine();
         }
