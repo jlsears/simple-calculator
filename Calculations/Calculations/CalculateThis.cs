@@ -12,8 +12,9 @@ namespace Calculations
         {
             int counter = 0;
             var theDelimiters = new[] { '+', '-', '*', '/', '%' };
+            var prompt = "[" + counter + "]" + "> ";
 
-            Console.Write("[" + counter + "]" + "> ");
+            Console.Write(prompt);
             string desiredCalc = Console.ReadLine();
             Console.WriteLine("We're going to calculate " + desiredCalc);
            
