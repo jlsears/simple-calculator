@@ -30,12 +30,35 @@ namespace Calculations
                 secondPart = parsedInfo[1];
             }
 
+            int firstAgain = Convert.ToInt32(firstPart);
+            int secondAgain = Convert.ToInt32(secondPart);
+
             Console.WriteLine("We have " + firstPart + " and " + secondPart + " now.");
 
 
             var foundIt = desiredCalc.IndexOfAny(theDelimiters);
             var ourComputation = desiredCalc[foundIt];
             Console.WriteLine("Here's our delimiter: " + ourComputation);
+
+            switch (ourComputation)
+            {
+                case '+' :
+                    Console.WriteLine(firstAgain + secondAgain);
+                    Console.ReadLine();
+                    break;
+                case '-':
+                    Console.WriteLine(firstAgain - secondAgain);
+                    Console.ReadLine();
+                    break;
+                case '*':
+                    Console.WriteLine(firstAgain * secondAgain);
+                    Console.ReadLine();
+                    break;
+                case '/':
+                    Console.WriteLine(firstAgain / secondAgain);
+                    Console.ReadLine();
+                    break;
+            }
 
             Console.ReadLine();
         }
