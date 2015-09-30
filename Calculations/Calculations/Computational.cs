@@ -11,17 +11,10 @@ namespace Calculations
         public static void Addition(int firstAgain, int secondAgain, int counter)
         {
             Console.WriteLine("= " + (firstAgain + secondAgain));
-            counter = counter + 1;
             string reply = Console.ReadLine();
-            switch (reply)
-            {
-                case "quit":
-                    return;
-                case "exit":
-                    return;
-                default:
-                    break;
+            Proceeding.Replying(reply);
             }
         }
     }
-}
+
+

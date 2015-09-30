@@ -50,6 +50,7 @@ namespace Calculations
                     switch (ourComputation)
                     {
                         case '+':
+                            counter = counter + 1;
                             Computational.Addition(firstAgain, secondAgain, counter);                           
                             break;
                         case '-':
