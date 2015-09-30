@@ -50,19 +50,7 @@ namespace Calculations
                     switch (ourComputation)
                     {
                         case '+':
-                            Console.WriteLine("= " + (firstAgain + secondAgain));
-                            counter = counter + 1;
-                            string reply = Console.ReadLine();
-                            switch(reply)
-                            {
-                                case "quit":
-                                    return;
-                                case "exit":
-                                    return;
-                                default:
-                                    break;
-                            }
-
+                            Computational.Addition(firstAgain, secondAgain, counter);                           
                             break;
                         case '-':
                             Console.WriteLine("= " + (firstAgain - secondAgain));
@@ -89,7 +77,7 @@ namespace Calculations
                     //something here
                 }
             }
-            //Init();
+            
         }
     }
 }
