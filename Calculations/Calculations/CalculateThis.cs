@@ -54,24 +54,23 @@ namespace Calculations
                             Computational.Addition(firstAgain, secondAgain, counter);                           
                             break;
                         case '-':
-                            Console.WriteLine("= " + (firstAgain - secondAgain));
-                            Console.ReadLine();
+                            counter = counter + 1;
+                            Computational.Subtraction(firstAgain, secondAgain, counter);
                             break;
                         case '*':
-                            Console.WriteLine("= " + (firstAgain * secondAgain));
-                            Console.ReadLine();
+                            counter = counter + 1;
+                            Computational.Multiplication(firstAgain, secondAgain, counter);
                             break;
                         case '/':
-                            Console.WriteLine("= " + (firstAgain / secondAgain));
-                            Console.ReadLine();
+                            counter = counter + 1;
+                            Computational.Division(firstAgain, secondAgain, counter);
                             break;
                         case '%':
-                            Console.WriteLine("= " + (firstAgain % secondAgain));
-                            Console.ReadLine();
+                            counter = counter + 1;
+                            Computational.Remainder(firstAgain, secondAgain, counter);
                             break;
                     }
 
-                    Console.ReadLine();
                 }
                 catch
                 {

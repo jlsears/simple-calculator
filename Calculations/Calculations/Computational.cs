@@ -14,7 +14,35 @@ namespace Calculations
             string reply = Console.ReadLine();
             Proceeding.Replying(reply);
             }
+
+        public static void Subtraction(int firstAgain, int secondAgain, int counter)
+        {
+            Console.WriteLine("= " + (firstAgain - secondAgain));
+            string reply = Console.ReadLine();
+            Proceeding.Replying(reply);
         }
+
+        public static void Multiplication(int firstAgain, int secondAgain, int counter)
+        {
+            Console.WriteLine("= " + (firstAgain * secondAgain));
+            string reply = Console.ReadLine();
+            Proceeding.Replying(reply);
+        }
+
+        public static void Division(int firstAgain, int secondAgain, int counter)
+        {
+            Console.WriteLine("= " + (firstAgain / secondAgain));
+            string reply = Console.ReadLine();
+            Proceeding.Replying(reply);
+        }
+
+        public static void Remainder(int firstAgain, int secondAgain, int counter)
+        {
+            Console.WriteLine("= " + (firstAgain % secondAgain));
+            string reply = Console.ReadLine();
+            Proceeding.Replying(reply);
+        }
+      }
     }
 
 
