@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculations
 {
-    public static class Computational
+    public class Computational
     {
         public static void Addition(int firstAgain, int secondAgain, int counter)
         {

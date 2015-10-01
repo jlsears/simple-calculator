@@ -76,8 +76,9 @@ namespace Calculations
                 {
                     //something here
                 }
+                //Console.ReadLine();
+
             }
-            
         }
     }
 }

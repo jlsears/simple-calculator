@@ -10,11 +10,16 @@ namespace Calculations
     {
         public static void Replying(string reply)
         {
-            switch (reply)
+
+            string goForth = reply;
+
+            switch (goForth)
             {
                 case "quit":
+                    Environment.Exit(1);
                     return;
                 case "exit":
+                    Environment.Exit(1);
                     return;
                 default:
                     break;
