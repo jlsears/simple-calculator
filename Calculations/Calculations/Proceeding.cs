@@ -14,9 +14,11 @@ namespace Calculations
             switch (reply)
             {
                 case "quit":
+                    Console.WriteLine("See ya!");
                     Environment.Exit(1);
                     return;
                 case "exit":
+                    Console.WriteLine("See ya!");
                     Environment.Exit(1);
                     return;
                 default:

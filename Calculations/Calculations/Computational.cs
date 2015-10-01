@@ -11,36 +11,31 @@ namespace Calculations
         public static void Addition(int firstAgain, int secondAgain, int counter)
         {
             Console.WriteLine("= " + (firstAgain + secondAgain));
-            string reply = Console.ReadLine();
-            Proceeding.Replying(reply);
+            return;
             }
 
         public static void Subtraction(int firstAgain, int secondAgain, int counter)
         {
             Console.WriteLine("= " + (firstAgain - secondAgain));
-            string reply = Console.ReadLine();
-            Proceeding.Replying(reply);
+            return;
         }
 
         public static void Multiplication(int firstAgain, int secondAgain, int counter)
         {
             Console.WriteLine("= " + (firstAgain * secondAgain));
-            string reply = Console.ReadLine();
-            Proceeding.Replying(reply);
+            return;
         }
 
         public static void Division(int firstAgain, int secondAgain, int counter)
         {
             Console.WriteLine("= " + (firstAgain / secondAgain));
-            string reply = Console.ReadLine();
-            Proceeding.Replying(reply);
+            return;
         }
 
         public static void Remainder(int firstAgain, int secondAgain, int counter)
         {
             Console.WriteLine("= " + (firstAgain % secondAgain));
-            string reply = Console.ReadLine();
-            Proceeding.Replying(reply);
+            return;
         }
       }
     }
