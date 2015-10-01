@@ -11,9 +11,7 @@ namespace Calculations
         public static void Replying(string reply)
         {
 
-            string goForth = reply;
-
-            switch (goForth)
+            switch (reply)
             {
                 case "quit":
                     Environment.Exit(1);
