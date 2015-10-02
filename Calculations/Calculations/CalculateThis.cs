@@ -21,6 +21,7 @@ namespace Calculations
                     var theDelimiters = new[] { '+', '-', '*', '/', '%' };
                     var prompt = "[" + counter + "]" + "> ";
 
+ 
                     Console.Write(prompt);
                     string desiredCalc = Console.ReadLine();
                     //Console.WriteLine("We're going to calculate " + desiredCalc);
@@ -36,7 +37,10 @@ namespace Calculations
                             Console.WriteLine("See ya!");
                             Environment.Exit(1);
                             return;
-
+                        case "last":
+                            Console.WriteLine(Computational.Answer);
+                            goto default;
+                            //return;
                         default:
 
                             string[] parsedInfo = desiredCalc.Split(theDelimiters);
