@@ -12,6 +12,7 @@ namespace Calculations
         {
             int counter = 0;
             var theirReply = true;
+            string mostRecent = "Whatchoo talkin' 'bout, Willis?";
 
             while (theirReply)
             {
@@ -19,12 +20,16 @@ namespace Calculations
                 try
                 {
                     var theDelimiters = new[] { '+', '-', '*', '/', '%' };
-                    var prompt = "[" + counter + "]" + "> ";
-
+                    var prompt = "[" + counter + "]" + "> ";                  
  
                     Console.Write(prompt);
                     string desiredCalc = Console.ReadLine();
                     //Console.WriteLine("We're going to calculate " + desiredCalc);
+
+                    if (desiredCalc != "lastq")
+                    {
+                        mostRecent = desiredCalc;
+                    }
 
                     switch (desiredCalc)
                     {
@@ -40,7 +45,9 @@ namespace Calculations
                         case "last":
                             Console.WriteLine(Computational.Answer);
                             goto default;
-                            //return;
+                        case "lastq":
+                            Console.WriteLine(mostRecent);
+                            goto default;
                         default:
 
                             string[] parsedInfo = desiredCalc.Split(theDelimiters);
@@ -58,7 +65,6 @@ namespace Calculations
                             int secondAgain = Convert.ToInt32(secondPart);
 
                             //Console.WriteLine("We have " + firstPart + " and " + secondPart + " now.");
-
 
                             var foundIt = desiredCalc.IndexOfAny(theDelimiters);
                             var ourComputation = desiredCalc[foundIt];
