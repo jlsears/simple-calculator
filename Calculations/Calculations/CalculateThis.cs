@@ -61,6 +61,8 @@ namespace Calculations
                                 secondPart = parsedInfo[1];
                             }
 
+                            // Need to add step checking for extra delimiters here
+
                             int firstAgain = Convert.ToInt32(firstPart);
                             int secondAgain = Convert.ToInt32(secondPart);
 

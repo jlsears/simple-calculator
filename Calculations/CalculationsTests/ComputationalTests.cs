@@ -7,20 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-//namespace Calculations.Tests
-//{
-//    [TestClass()]
-//    public class ComputationalTests
-//    {
-//        [TestMethod()]
-//        public void AdditionTest()
-//        {
-//            Computational something = new Computational(); 
-            
-//            int firstAgain = 8;
-//            int secondAgain = 2;
-//            int counter = 5;
-//            Assert.AreEqual(Computational.Addition(firstAgain, secondAgain, counter), 10);
-//        }
-//    }
-//}
+namespace Calculations.Tests
+{
+    [TestClass()]
+    public class ComputationalTests
+    {
+        [TestMethod()]
+        public void AdditionTest()
+        {
+            Computational.Addition(8, 2, 4);
+            Assert.AreEqual(Computational.Answer, 10);
+        }
+    }
+}
