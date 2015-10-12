@@ -18,5 +18,33 @@ namespace Calculations.Tests
             Computational.Addition(8, 2, 4);
             Assert.AreEqual(Computational.Answer, 10);
         }
+
+        [TestMethod()]
+        public void SubtractionTest()
+        {
+            Computational.Subtraction(16, 2, 4);
+            Assert.AreEqual(Computational.Answer, 14);
+        }
+
+        [TestMethod()]
+        public void MultiplicationTest()
+        {
+            Computational.Multiplication(5, 3, 4);
+            Assert.AreEqual(Computational.Answer, 15);
+        }
+
+        [TestMethod()]
+        public void DivisionTest()
+        {
+            Computational.Division(10, 2, 4);
+            Assert.AreEqual(Computational.Answer, 5);
+        }
+
+        [TestMethod()]
+        public void RemainderTest()
+        {
+            Computational.Remainder(12, 5, 4);
+            Assert.AreEqual(Computational.Answer, 2);
+        }
     }
 }
